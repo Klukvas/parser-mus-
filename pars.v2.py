@@ -70,7 +70,7 @@ def down(dic):
     linkToDonw = linkToDonw.find('a', id="audiotrack-download-link--dwnl")
     linkToDonw = linkToDonw.get("href")
     downw = requests.get(linkToDonw)
-    print(r"Укажите абсолютный путь для скачивание песни(если оставить пустым - музыка будет скачана в актуальную папку скрипта) \n  Пример:  C:\Users\Andrew\Desktop\mus ") #C:\Users\Andrew\Desktop\mus
+    print("Укажите абсолютный путь для скачивание песни(если оставить пустым - музыка будет скачана в актуальную папку скрипта)" +"\n"+  r"Пример:  C:\Users\Andrew\Desktop\mus ") #C:\Users\Andrew\Desktop\mus
     way = input(":")
     if way == " " or way == "":
         with open(f"{dic[0]}.mp3", "wb") as file:
